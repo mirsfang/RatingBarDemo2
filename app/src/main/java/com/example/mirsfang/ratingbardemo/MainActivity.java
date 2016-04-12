@@ -5,13 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class MainActivity extends Activity {
-    Double a =1.5;
+    Double a = 1.5;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RatingBar mRatingBar = (RatingBar) findViewById(R.id.ratingbar);
 
-
+        //点击之后的回调
         mRatingBar.setOnRatingChangeListener(
                 new RatingBar.OnRatingChangeListener() {
                     @Override
@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
                 }
         );
 
-
+        //优先设置一定数量下的星星样式
         RatingBar.Changed changed=mRatingBar.getChanged();
         changed.setPosintion(2);
         changed.setChangeDrawable(getResources().getDrawable(R.drawable.grabhb_yellow));
@@ -29,6 +29,8 @@ public class MainActivity extends Activity {
         mRatingBar.setChanged(changed);
 
         mRatingBar.setStar(a.floatValue());
+
+        //设置正常下的星星的样式
         mRatingBar.setmClickable(true);
         mRatingBar.setStarImageSize(16f);
         mRatingBar.setStarEmptyDrawable(getResources().getDrawable(R.drawable.grabhb_ash));

@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import java.math.BigDecimal;
 
 /**
- * Created by hedge_hog on 2015/6/11.
+ * Created by Mirs on 2016/4/11.
  *
  * add halfstar show
  *
