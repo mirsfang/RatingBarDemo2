@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class MainActivity extends Activity {
+    private static final String TAG="MyRatingBar";
     Double a = 1.5;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +17,7 @@ public class MainActivity extends Activity {
                 new RatingBar.OnRatingChangeListener() {
                     @Override
                     public void onRatingChange(float RatingCount) {
-                        Log.e("ssss",RatingCount+"");
+                        Log.e(TAG,RatingCount+"");
                     }
                 }
         );
@@ -27,7 +28,7 @@ public class MainActivity extends Activity {
         changed.setChangeDrawable(getResources().getDrawable(R.drawable.grabhb_yellow));
         changed.setChangeHarlfDrawable(getResources().getDrawable(R.drawable.grabhb_yellowhalf));
         mRatingBar.setChanged(changed);
-
+        //设置星星
         mRatingBar.setStar(a.floatValue());
 
         //设置正常下的星星的样式

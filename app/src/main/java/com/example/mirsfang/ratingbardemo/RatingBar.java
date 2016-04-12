@@ -32,27 +32,45 @@ public class RatingBar extends LinearLayout {
     //需要改变的地方
     private float a=0;
 
+    /**
+     * 设置半颗星星的图片
+     * */
     public void setStarHalfDrawable(Drawable starHalfDrawable) {
         this.starHalfDrawable = starHalfDrawable;
     }
 
 
+    /**
+     * 当星星被点击时候的回调
+     * */
     public void setOnRatingChangeListener(OnRatingChangeListener onRatingChangeListener) {
         this.onRatingChangeListener = onRatingChangeListener;
     }
 
+    /**
+     * 是否能被点击
+     * */
     public void setmClickable(boolean clickable) {
         this.mClickable = clickable;
     }
 
+    /**
+     * 设置星星的图片
+     * */
     public void setStarFillDrawable(Drawable starFillDrawable) {
         this.starFillDrawable = starFillDrawable;
     }
-
+    /***
+     *
+     * 设置星星的背景
+     */
     public void setStarEmptyDrawable(Drawable starEmptyDrawable) {
         this.starEmptyDrawable = starEmptyDrawable;
     }
 
+    /***
+     * 设置星星的大小
+     */
     public void setStarImageSize(float starImageSize) {
         this.starImageSize = starImageSize;
     }
