@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="RatingBar" tools:ignore="ResourceName">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <!--资源文件值-->
+        <attr name="starEmpty" format="reference"/>
+         <!--资源文件值-->
+        <attr name="starFill" format="reference"/>
+        <!--资源文件值-->
+        <attr name="starHalf" format="reference"/>
+        <!--boolean值-->
+        <attr name="clickable" format="boolean"/>
+        <!--改变样式的值-->
+        <attr name="changeTo" format="integer"></attr>
+    </declare-styleable>
+</resources>
