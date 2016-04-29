@@ -127,7 +127,6 @@ public class RatingBar extends LinearLayout {
         );
         imageView.setLayoutParams(para);
         imageView.setPadding(0, 0, 5, 0);
-        if(starEmptyDrawable!=null)
         imageView.setImageDrawable(starEmptyDrawable);
         imageView.setMaxWidth(10);
         imageView.setMaxHeight(10);
@@ -194,7 +193,6 @@ public class RatingBar extends LinearLayout {
                 ((ImageView) getChildAt(fint)).setImageDrawable(starHalfDrawable);
             }
 
-            if(starEmptyDrawable!=null)
             //drawemptystar
             for (int i = this.starCount - 1; i >= starCount + 1; --i) {
                 ((ImageView) getChildAt(i)).setImageDrawable(starEmptyDrawable);
@@ -203,7 +201,6 @@ public class RatingBar extends LinearLayout {
 
         } else {
             //drawemptystar
-            if(starEmptyDrawable!=null)
             for (int i = this.starCount - 1; i >= starCount; --i) {
                 ((ImageView) getChildAt(i)).setImageDrawable(starEmptyDrawable);
             }
