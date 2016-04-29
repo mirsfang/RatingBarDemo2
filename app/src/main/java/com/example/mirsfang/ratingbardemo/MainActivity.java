@@ -34,7 +34,6 @@ public class MainActivity extends Activity {
         //设置正常下的星星的样式
         mRatingBar.setmClickable(true);
         mRatingBar.setStarImageSize(16f);
-        mRatingBar.setStarEmptyDrawable(getResources().getDrawable(R.drawable.grabhb_ash));
         mRatingBar.setStarFillDrawable(getResources().getDrawable(R.drawable.grabhb_red));
         mRatingBar.setStarHalfDrawable(getResources().getDrawable(R.drawable.grabhb_halfred));
 

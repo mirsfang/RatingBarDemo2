@@ -19,7 +19,6 @@
        android:layout_height="wrap_content"
        android:layout_centerInParent="true"
        mirsfang:clickable="true"
-       mirsfang:starEmpty="@drawable/grabhb_ash"
        mirsfang:starFill="@drawable/grabhb_red"
        mirsfang:starHalf="@drawable/grabhb_halfred"
        mirsfang:starImageSize="30dp"
